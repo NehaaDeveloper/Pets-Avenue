@@ -9,7 +9,7 @@
     --border-radius-lg: 50px; 
     --border-radius-sm: 20px; 
 
-     --section-bg-light: #fdfdfd;
+    --section-bg-light: #fdfdfd;
     --section-bg-dark: #3264b3; 
     --btn-primary-bg: var(--accent-color);
     --btn-primary-text: #ffffff;
@@ -49,7 +49,7 @@ img {
 }
 
 
-/* Utility Classes  */
+/* Utility Classes  */
 
 .pa-section {
     padding: 60px 0; /* Standard section padding */
@@ -143,7 +143,7 @@ img {
 }
 
 .pa-navbar-brand .pa-logo {
-     width: 100%;
+    width: 100%;
     height: 87px;
     object-fit: contain; 
 }
@@ -200,7 +200,7 @@ img {
     color: white;
 }
 
-/* Hover Effect for Nav Item  */
+/* Hover Effect for Nav Item  */
 .pa-nav-item .pa-nav-link:hover:not(.pa-nav-item.active .pa-nav-link) {
     background-image: linear-gradient(to left, var(--gradient-start), var(--gradient-end)); 
     color: white;
@@ -223,7 +223,7 @@ img {
 }
 
 
-/*Main Content Styles  */
+/*Main Content Styles  */
 
 
 .content-section h2 {
@@ -244,7 +244,7 @@ img {
 }
 
 
-/*  Our Services Section */
+/*  Our Services Section */
 
 .pa-services-section {
     background-color: var(--section-bg-light);
@@ -305,7 +305,7 @@ img {
     width: 100%;
     padding-bottom: 100%; 
     margin: 0 auto; 
-    /* max-width: 450px;  */
+    /* max-width: 450px;  */
     border-radius: 50%; 
     overflow: hidden;
     background-color: var(--gradient-start); 
@@ -339,7 +339,7 @@ img {
 }
 
 
-/*  Why Trust Section */
+/*  Why Trust Section */
 
 .pa-trust-section {
     background-color: var(--section-bg-light);
@@ -542,7 +542,7 @@ img {
 
 
 
-/*  PA-Footer Styles  */
+/*  PA-Footer Styles  */
 
 .pa-footer {
     background: #000;
@@ -588,13 +588,13 @@ img {
 }
 
 
-/*  Responsive Design  */
+/*  Responsive Design  */
 
 
 /* Tablet & Smaller Desktop */
 @media (max-width: 1024px) {
     .pa-navbar {
-        width: 98%;
+        width: 98%; 
         padding: 0 15px;
     }
 
@@ -612,10 +612,10 @@ img {
     }
 
     .pa-navbar-brand .pa-logo {
-        height: 55px;
+        height: 55px; 
     }
 
-    
+    /* Common section adjustments for smaller screens */
     .pa-section {
         padding: 40px 0;
     }
@@ -643,53 +643,76 @@ img {
     .pa-trust-title {
         font-size: 1.4em;
     }
+    
+    /* ******************************************************************* */
+    /* MODIFIED FOR TABLET (1024px) - Ensure 2 columns */
+    /* This will make sure .col elements take 50% width in this range */
+    .pa-service-grid .col,
+    .pa-trust-grid .col,
+    .pa-patients-categories .col,
+    .pa-testimonial-grid .col {
+        flex: 0 0 50%; /* Each column takes 50% width */
+        max-width: 50%; /* Max width 50% */
+    }
+    /* ******************************************************************* */
 
-   
+    /* About Us section image adjustment for tablets */
+    .pa-about-us-section .col-lg-6 {
+        padding: 20px;
+    }
+    .pa-about-image-wrapper {
+        margin-bottom: 30px; /* Add space below image when stacked on smaller tablets */
+    }
+
+    /* Forms: Image and Form stack vertically */
+    .pa-form-image-col {
+        margin-bottom: 30px; /* Space below image when stacked */
+    }
 }
 
 /* Mobile Devices */
 @media (max-width: 768px) {
     .pa-navbar {
         flex-wrap: wrap;
-        height: auto;
+        height: auto; 
         padding: 10px 20px;
-        border-radius: var(--border-radius-sm);
-        top: 0;
+        border-radius: var(--border-radius-sm); 
+        top: 0; 
         width: 100%;
         left: 0;
-        transform: none;
+        transform: none; 
     }
 
     .pa-navbar-brand {
         width: 100%;
         justify-content: space-between;
-        margin-bottom: 0;
+        margin-bottom: 0; 
     }
 
     .pa-navbar-brand .pa-logo {
-        height: 50px;
+        height: 50px; 
         margin-right: 10px;
     }
 
     .pa-navbar-brand .pa-brand-text {
         font-size: 1.2em;
-        flex-grow: 1;
-        text-align: left;
+        flex-grow: 1; 
+        text-align: left; 
     }
 
     .pa-navbar-menu {
-        flex-direction: column;
+        flex-direction: column; 
         width: 100%;
-        display: none;
-        background-color: white;
+        display: none; 
+        background-color: white; /* Changed from var(--primary-color) based on your file */
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         padding: 10px 0;
-        border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
-        box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+        border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm); 
+        box-shadow: inset 0 3px 5px rgba(0,0,0,0.05); 
     }
 
     .pa-navbar-menu.pa-nav-active {
-        display: flex;
+        display: flex; 
     }
 
     .pa-nav-item {
@@ -699,17 +722,17 @@ img {
 
     .pa-nav-item .pa-nav-link {
         width: 100%;
-        justify-content: center;
+        justify-content: center; 
         padding: 10px 0;
-        border-radius: 0;
+        border-radius: 0; 
     }
 
     .pa-hamburger {
-        display: block;
+        display: block; 
     }
 
     main {
-        padding-top: 80px;
+        padding-top: 80px; 
     }
 
     .pa-section {
@@ -725,14 +748,13 @@ img {
         margin-bottom: 20px;
     }
 
-    /* Service and Trust cards stack on mobile */
-    .pa-service-grid .col,
-    .pa-trust-grid .col,
-    .pa-patients-categories .col,
-    .pa-testimonial-grid .col { 
-        flex: 0 0 100%; 
-        /* max-width: 100%; */
-    }
+ .pa-service-grid .col,
+.pa-trust-grid .col,
+.pa-patients-categories .col,
+.pa-testimonial-grid .col {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+}
 
     .pa-service-card,
     .pa-trust-card,
@@ -749,9 +771,21 @@ img {
     .pa-trust-title {
         font-size: 1.3em;
     }
-
     
-    
+    /* Forms: Image and Form stack vertically */
+    .pa-form-content-row .col-lg-6,
+    .pa-form-content-row .col-md-12 {
+        width: 100%; /* Full width on small screens */
+    }
+    .pa-form-image-col {
+        order: 1; /* Image first */
+    }
+    .pa-form-container {
+        order: 2; /* Form second */
+    }
+    .pa-form-container form .row .col-md-6 {
+        width: 100%; /* Make form inputs full width on small screens */
+    }
 
     /* Footer adjustments for mobile */
     .pa-footer-section ul li{
@@ -778,11 +812,11 @@ img {
     }
 
     .pa-hamburger {
-        font-size: 1.5em;
+        font-size: 1.5em; 
     }
 
     .content-section {
-        padding: 20px;
+        padding: 20px; 
     }
 
     .content-section h2 {
@@ -818,8 +852,6 @@ img {
         font-size: 1.2em;
     }
 
-
-
     .pa-author-avatar {
         width: 50px;
         height: 50px;
@@ -831,6 +863,18 @@ img {
 
     .pa-star-rating {
         font-size: 0.8em;
+    }
+    /* Footer adjustments for very small screens - moved from 768px for better control */
+    .pa-footer-section ul li {
+        display: block; 
+        margin: 10px 0px;
+        text-align: center;
+    }
+    .pa-footer-section a i {
+        margin: 0% 2%; 
+    }
+    .pa-footer-section {
+        font-size: 0.75em;
     }
 }
 
@@ -872,8 +916,8 @@ img {
 }
 
 .pa-pet-image {
-    max-width: 100%;
-    height: auto;
+    /* max-width: 100%; */
+    height: 428px;;
     border-radius: 15px; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     object-fit: cover;
@@ -978,7 +1022,7 @@ img {
     border-radius: 8px;
     display: inline-block !important;
 }
-/*  PA-Footer Styles  */
+/*  PA-Footer Styles  */
 
 .pa-footer {
     background: var(--hover-color); 
@@ -1021,137 +1065,4 @@ img {
 .pa-footer-section a i {
     font-size: 2em;
     margin: 0% 1%;
-}
-
-
-/*  Responsive Design  */
-
-
-/* Tablet & Smaller Desktop */
-@media (max-width: 1024px) {
-    .pa-navbar {
-        width: 98%; 
-        padding: 0 15px;
-    }
-
-    .pa-navbar-menu {
-        gap: 15px;
-    }
-
-    .pa-nav-item .pa-nav-link {
-        font-size: 0.85em;
-        padding: 6px 10px;
-    }
-
-    .pa-nav-item .pa-nav-link i {
-        font-size: 1.1em;
-    }
-
-    .pa-navbar-brand .pa-logo {
-        height: 55px; 
-    }
-}
-
-/* Mobile Devices */
-@media (max-width: 768px) {
-    .pa-navbar {
-        flex-wrap: wrap;
-        height: auto; 
-        padding: 10px 20px;
-        border-radius: var(--border-radius-sm); 
-        top: 0; 
-        width: 100%;
-        left: 0;
-        transform: none; 
-    }
-
-    
-    .pa-navbar-brand {
-        width: 100%;
-        justify-content: space-between;
-        margin-bottom: 0; 
-    }
-
-    .pa-navbar-brand .pa-logo {
-        height: 50px; 
-        margin-right: 10px;
-    }
-
-    .pa-navbar-brand .pa-brand-text {
-        font-size: 1.2em;
-        flex-grow: 1; 
-        text-align: left; 
-    }
-
-    .pa-navbar-menu {
-        flex-direction: column; 
-        width: 100%;
-        display: none; 
-        background-color: white;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 10px 0;
-        border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm); 
-        box-shadow: inset 0 3px 5px rgba(0,0,0,0.05); 
-    }
-
-    .pa-navbar-menu.pa-nav-active {
-        display: flex; 
-    }
-
-    .pa-nav-item {
-        width: 100%;
-        text-align: center;
-    }
-
-    .pa-nav-item .pa-nav-link {
-        width: 100%;
-        justify-content: center; 
-        padding: 10px 0;
-        border-radius: 0; 
-    }
-
-    .pa-hamburger {
-        display: block; 
-      
-    }
-
-    main {
-        padding-top: 80px; 
-    }
-}
-
-/* Very Small Mobile Devices */
-@media (max-width: 480px) {
-    .pa-navbar-brand .pa-logo {
-        height: 45px;
-    }
-
-    .pa-navbar-brand .pa-brand-text {
-        font-size: 1em;
-    }
-
-    .pa-hamburger {
-        font-size: 1.5em; 
-    }
-
-    .content-section {
-        padding: 20px; 
-    }
-
-    .content-section h2 {
-        font-size: 1.8em;
-    }
-
-    /* Footer adjustments for very small screens */
-    .pa-footer-section ul li {
-        display: block; 
-        margin: 10px 0px;
-        text-align: center;
-    }
-    .pa-footer-section a i {
-        margin: 0% 2%; 
-    }
-    .pa-footer-section {
-        font-size: 0.75em;
-    }
 }

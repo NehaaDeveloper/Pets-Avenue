@@ -19,7 +19,7 @@
     --star-color: #FFD700; 
 }
 
-/* Universal Box-Sizing and Font */
+
 * {
     margin: 0;
     padding: 0;
@@ -588,10 +588,10 @@ img {
 }
 
 
-/*  Responsive Design  */
 
 
-/* Tablet & Smaller Desktop */
+
+
 @media (max-width: 1024px) {
     .pa-navbar {
         width: 98%; 
@@ -644,29 +644,25 @@ img {
         font-size: 1.4em;
     }
     
-    /* ******************************************************************* */
-    /* MODIFIED FOR TABLET (1024px) - Ensure 2 columns */
-    /* This will make sure .col elements take 50% width in this range */
+
     .pa-service-grid .col,
     .pa-trust-grid .col,
     .pa-patients-categories .col,
     .pa-testimonial-grid .col {
-        flex: 0 0 50%; /* Each column takes 50% width */
-        max-width: 50%; /* Max width 50% */
+        flex: 0 0 50%;
+        max-width: 50%; 
     }
-    /* ******************************************************************* */
-
-    /* About Us section image adjustment for tablets */
+   
     .pa-about-us-section .col-lg-6 {
         padding: 20px;
     }
     .pa-about-image-wrapper {
-        margin-bottom: 30px; /* Add space below image when stacked on smaller tablets */
+        margin-bottom: 30px;
     }
 
-    /* Forms: Image and Form stack vertically */
+  
     .pa-form-image-col {
-        margin-bottom: 30px; /* Space below image when stacked */
+        margin-bottom: 30px; 
     }
 }
 
@@ -704,7 +700,7 @@ img {
         flex-direction: column; 
         width: 100%;
         display: none; 
-        background-color: white; /* Changed from var(--primary-color) based on your file */
+        background-color: white; 
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         padding: 10px 0;
         border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm); 
@@ -772,22 +768,22 @@ img {
         font-size: 1.3em;
     }
     
-    /* Forms: Image and Form stack vertically */
+  
     .pa-form-content-row .col-lg-6,
     .pa-form-content-row .col-md-12 {
-        width: 100%; /* Full width on small screens */
+        width: 100%; 
     }
     .pa-form-image-col {
-        order: 1; /* Image first */
+        order: 1; 
     }
     .pa-form-container {
-        order: 2; /* Form second */
+        order: 2; 
     }
     .pa-form-container form .row .col-md-6 {
-        width: 100%; /* Make form inputs full width on small screens */
+        width: 100%; 
     }
 
-    /* Footer adjustments for mobile */
+ 
     .pa-footer-section ul li{
         display:block;
         margin:10px 0px;
@@ -864,7 +860,7 @@ img {
     .pa-star-rating {
         font-size: 0.8em;
     }
-    /* Footer adjustments for very small screens - moved from 768px for better control */
+   
     .pa-footer-section ul li {
         display: block; 
         margin: 10px 0px;
@@ -942,7 +938,7 @@ img {
 }
 
 .pa-form-input {
-    background-color: #f8f8f8; /* Light grey background for inputs */
+    background-color: #f8f8f8;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 10px 15px;

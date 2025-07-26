@@ -190,7 +190,7 @@ img {
 }
 
 /* Active Nav Item */
-.pa-nav-item.active .pa-nav-link {
+/* .pa-nav-item.active .pa-nav-link {
     background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
@@ -198,7 +198,7 @@ img {
 
 .pa-nav-item.active .pa-nav-link i {
     color: white;
-}
+} */
 
 /* Hover Effect for Nav Item  */
 .pa-nav-item .pa-nav-link:hover:not(.pa-nav-item.active .pa-nav-link) {
@@ -592,303 +592,13 @@ img {
 
 
 
-@media (max-width: 1024px) {
-    .pa-navbar {
-        width: 98%; 
-        padding: 0 15px;
-    }
-
-    .pa-navbar-menu {
-        gap: 15px;
-    }
-
-    .pa-nav-item .pa-nav-link {
-        font-size: 0.85em;
-        padding: 6px 10px;
-    }
-
-    .pa-nav-item .pa-nav-link i {
-        font-size: 1.1em;
-    }
-
-    .pa-navbar-brand .pa-logo {
-        height: 55px; 
-    }
-
-    /* Common section adjustments for smaller screens */
-    .pa-section {
-        padding: 40px 0;
-    }
-
-    .pa-section-title {
-        font-size: 2em;
-    }
-
-    .pa-section-subtitle {
-        font-size: 1.1em;
-    }
-
-    .pa-service-card,
-    .pa-trust-card,
-    .pa-testimonial-card { 
-        padding: 25px 15px;
-    }
-
-    .pa-service-icon,
-    .pa-trust-icon {
-        font-size: 3em;
-    }
-
-    .pa-service-title,
-    .pa-trust-title {
-        font-size: 1.4em;
-    }
-    
-
-    .pa-service-grid .col,
-    .pa-trust-grid .col,
-    .pa-patients-categories .col,
-    .pa-testimonial-grid .col {
-        flex: 0 0 50%;
-        max-width: 50%; 
-    }
-   
-    .pa-about-us-section .col-lg-6 {
-        padding: 20px;
-    }
-    .pa-about-image-wrapper {
-        margin-bottom: 30px;
-    }
-
-  
-    .pa-form-image-col {
-        margin-bottom: 30px; 
-    }
-}
-
-/* Mobile Devices */
-@media (max-width: 768px) {
-    .pa-navbar {
-        flex-wrap: wrap;
-        height: auto; 
-        padding: 10px 20px;
-        border-radius: var(--border-radius-sm); 
-        top: 0; 
-        width: 100%;
-        left: 0;
-        transform: none; 
-    }
-
-    .pa-navbar-brand {
-        width: 100%;
-        justify-content: space-between;
-        margin-bottom: 0; 
-    }
-
-    .pa-navbar-brand .pa-logo {
-        height: 50px; 
-        margin-right: 10px;
-    }
-
-    .pa-navbar-brand .pa-brand-text {
-        font-size: 1.2em;
-        flex-grow: 1; 
-        text-align: left; 
-    }
-
-    .pa-navbar-menu {
-        flex-direction: column; 
-        width: 100%;
-        display: none; 
-        background-color: white; 
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 10px 0;
-        border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm); 
-        box-shadow: inset 0 3px 5px rgba(0,0,0,0.05); 
-    }
-
-    .pa-navbar-menu.pa-nav-active {
-        display: flex; 
-    }
-
-    .pa-nav-item {
-        width: 100%;
-        text-align: center;
-    }
-
-    .pa-nav-item .pa-nav-link {
-        width: 100%;
-        justify-content: center; 
-        padding: 10px 0;
-        border-radius: 0; 
-    }
-
-    .pa-hamburger {
-        display: block; 
-    }
-
-    main {
-        padding-top: 80px; 
-    }
-
-    .pa-section {
-        padding: 30px 0;
-    }
-
-    .pa-section-title {
-        font-size: 1.8em;
-    }
-
-    .pa-section-subtitle {
-        font-size: 1em;
-        margin-bottom: 20px;
-    }
-
- .pa-service-grid .col,
-.pa-trust-grid .col,
-.pa-patients-categories .col,
-.pa-testimonial-grid .col {
-    flex: 0 0 50%; 
-    max-width: 50%; 
-}
-
-    .pa-service-card,
-    .pa-trust-card,
-    .pa-testimonial-card {
-        padding: 20px;
-    }
-
-    .pa-service-icon,
-    .pa-trust-icon {
-        font-size: 2.8em;
-    }
-
-    .pa-service-title,
-    .pa-trust-title {
-        font-size: 1.3em;
-    }
-    
-  
-    .pa-form-content-row .col-lg-6,
-    .pa-form-content-row .col-md-12 {
-        width: 100%; 
-    }
-    .pa-form-image-col {
-        order: 1; 
-    }
-    .pa-form-container {
-        order: 2; 
-    }
-    .pa-form-container form .row .col-md-6 {
-        width: 100%; 
-    }
-
- 
-    .pa-footer-section ul li{
-        display:block;
-        margin:10px 0px;
-        text-align:center;
-    }
-    .pa-footer-section a i{
-        margin:0% 3%;
-    }
-    .pa-footer-section {
-        font-size: 0.75em;
-    }
-}
-
-/* Very Small Mobile Devices */
-@media (max-width: 480px) {
-    .pa-navbar-brand .pa-logo {
-        height: 45px;
-    }
-
-    .pa-navbar-brand .pa-brand-text {
-        font-size: 1em;
-    }
-
-    .pa-hamburger {
-        font-size: 1.5em; 
-    }
-
-    .content-section {
-        padding: 20px; 
-    }
-
-    .content-section h2 {
-        font-size: 1.8em;
-    }
-
-    .pa-section {
-        padding: 20px 0;
-    }
-
-    .pa-section-title {
-        font-size: 1.6em;
-    }
-
-    .pa-btn {
-        padding: 10px 20px;
-        font-size: 0.9em;
-    }
-
-    .pa-service-card,
-    .pa-trust-card,
-    .pa-testimonial-card {
-        padding: 15px;
-    }
-
-    .pa-service-icon,
-    .pa-trust-icon {
-        font-size: 2.5em;
-    }
-
-    .pa-service-title,
-    .pa-trust-title {
-        font-size: 1.2em;
-    }
-
-    .pa-author-avatar {
-        width: 50px;
-        height: 50px;
-    }
-
-    .pa-author-name {
-        font-size: 0.9em;
-    }
-
-    .pa-star-rating {
-        font-size: 0.8em;
-    }
-   
-    .pa-footer-section ul li {
-        display: block; 
-        margin: 10px 0px;
-        text-align: center;
-    }
-    .pa-footer-section a i {
-        margin: 0% 2%; 
-    }
-    .pa-footer-section {
-        font-size: 0.75em;
-    }
-}
 
 
-.pa-btn-shop {
-    background-color: #fff;
-    color: var(--section-bg-dark);
-    border: 2px solid #fff;
-}
-
-.pa-btn-shop:hover {
-    background-color: var(--section-bg-dark);
-    color: #fff;
-    box-shadow: none;
-}
 
 
-/* Forms Section */
+
+
+/* Forms Section1 */
 
 .pa-appointment-section,
 .pa-contact-section {
@@ -1018,47 +728,304 @@ img {
     border-radius: 8px;
     display: inline-block !important;
 }
-/*  PA-Footer Styles  */
 
-.pa-footer {
-    background: var(--hover-color); 
-    padding: 30px 0px;
-    font-family: 'Play', sans-serif;
-    text-align: center;
-    color: #ffff; 
+/* Tablet & Smaller Desktop */
+@media (max-width: 991.98px) {
+    .pa-navbar {
+        width: 100%; 
+        padding: 0 15px;
+    }
+
+    .pa-navbar-menu {
+        gap: 15px;
+    }
+
+    .pa-nav-item .pa-nav-link {
+        font-size: 0.85em;
+        padding: 6px 10px;
+    }
+
+    .pa-nav-item .pa-nav-link i {
+        font-size: 1.1em;
+    }
+
+    .pa-navbar-brand .pa-logo {
+        height: 55px; 
+    }
+
+   
+    .pa-section {
+        padding: 40px 0;
+    }
+
+    .pa-section-title {
+        font-size: 2em;
+    }
+
+    .pa-section-subtitle {
+        font-size: 1.1em;
+    }
+
+    .pa-service-card,
+    .pa-trust-card,
+    .pa-testimonial-card { 
+        padding: 25px 15px;
+    }
+
+    .pa-service-icon,
+    .pa-trust-icon {
+        font-size: 3em;
+    }
+    .caro-wth{
+        margin-top: 80px;
+    }
+    .pa-service-title,
+    .pa-trust-title {
+        font-size: 1.4em;
+    }
+    
+    
+
+    .pa-service-grid .col,
+    .pa-trust-grid .col,
+    .pa-patients-categories .col,
+    .pa-testimonial-grid .col {
+        flex: 0 0 50%;
+        max-width: 50%; 
+    }
+   
+
+    .pa-vet-shop-section {
+        padding: 60px 0;
+    }
+
+  
+    .pa-testimonial-quote i {
+        font-size: 1.3em;
+    }
+
+    
+    .pa-form-image-col {
+        margin-bottom: 30px; 
+    }
 }
 
-.pa-footer-section { 
-    width: 100%;
-    margin: 1% 0%;
-    padding: 0.6% 0%;
-    color: var(--hover-color); 
-    font-size: 0.8em;
+@media (max-width: 767.98px) {
+    .pa-navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 20px;
+        /* border-radius: var(--border-radius-sm); */
+        top: 0;
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    .pa-navbar-brand {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    .pa-navbar-brand .pa-logo {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .pa-navbar-brand .pa-brand-text {
+        font-size: 1.2em;
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .pa-navbar-menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        background-color: white;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
+        box-shadow: inset 0 3px 5px rgba(0,0,0,0.05);
+    }
+
+    .pa-navbar-menu.pa-nav-active {
+        display: flex;
+    }
+
+    .pa-nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pa-nav-item .pa-nav-link {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 0;
+        border-radius: 0;
+    }
+
+    .pa-hamburger {
+        display: block;
+    }
+
+    main {
+        padding-top: 80px;
+    }
+
+    .pa-section {
+        padding: 30px 0;
+    }
+
+    .pa-section-title {
+        font-size: 1.8em;
+    }
+
+    .pa-section-subtitle {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    /* Service and Trust cards stack on mobile */
+    .pa-service-grid .col,
+    .pa-trust-grid .col,
+    .pa-patients-categories .col,
+    .pa-testimonial-grid .col { /* Apply to testimonial card too */
+        flex: 0 0 100%; /* Make them full width */
+        max-width: 100%;
+    }
+
+    .pa-service-card,
+    .pa-trust-card,
+    .pa-testimonial-card {
+        padding: 20px;
+    }
+
+    .pa-service-icon,
+    .pa-trust-icon {
+        font-size: 2.8em;
+    }
+
+    .pa-service-title,
+    .pa-trust-title {
+        font-size: 1.3em;
+    }
+
+
+    
+    .pa-form-content-row .col-lg-6,
+    .pa-form-content-row .col-md-12 {
+        width: 100%; 
+    }
+    .pa-form-image-col {
+        order: 1; 
+    }
+    .pa-form-container {
+        order: 2; 
+    }
+    .pa-form-container form .row .col-md-6 {
+        width: 100%; 
+    }
+
+   
+    .pa-footer-section ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:center;
+    }
+    .pa-footer-section a i{
+        margin:0% 3%;
+    }
+    .pa-footer-section {
+        font-size: 0.75em;
+    }
 }
 
-.pa-footer-section a {
-    text-decoration: none;
-    color: white;
-    transition: 0.5s;
-}
 
-.pa-footer-section a:hover {
-    color: #fff;
-}
+@media (max-width: 480px) {
+    .pa-navbar-brand .pa-logo {
+        height: 45px;
+    }
 
-.pa-footer-section ul {
-    width: 100%;
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-}
+    .pa-navbar-brand .pa-brand-text {
+        font-size: 1em;
+    }
 
-.pa-footer-section ul li {
-    display: inline-block;
-    margin: 0px 30px;
-}
+    .pa-hamburger {
+        font-size: 1.5em;
+    }
 
-.pa-footer-section a i {
-    font-size: 2em;
-    margin: 0% 1%;
+    .content-section {
+        padding: 20px;
+    }
+
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+
+    .pa-section {
+        padding: 20px 0;
+    }
+
+    .pa-section-title {
+        font-size: 1.6em;
+    }
+
+    .pa-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .pa-service-card,
+    .pa-trust-card,
+    .pa-testimonial-card {
+        padding: 15px;
+    }
+
+    .pa-service-icon,
+    .pa-trust-icon {
+        font-size: 2.5em;
+    }
+    .caro-wth{
+        margin-top: 70px;
+    }
+
+    .pa-service-title,
+    .pa-trust-title {
+        font-size: 1.2em;
+    }
+
+    .pa-vet-shop-title {
+        font-size: 1.8em;
+    }
+
+    .pa-testimonial-quote i {
+        font-size: 1.2em;
+    }
+
+    .pa-author-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .pa-author-name {
+        font-size: 0.9em;
+    }
+
+    .pa-star-rating {
+        font-size: 0.8em;
+    }
+   
+    .pa-footer-section ul li {
+        display: block; 
+        margin: 10px 0px;
+        text-align: center;
+    }
+    .pa-footer-section a i {
+        margin: 0% 2%; 
+    }
+    .pa-footer-section {
+        font-size: 0.75em;
+    }
 }
